@@ -9,7 +9,7 @@ int main(void)
 {
 	char letters[] = "abcdefghijklmnopqrstuvwxyz";
 	int counter = 0;
-	int length_letters = sizeof(letter) / sizeof(char);
+	int length_letters = sizeof(letters) / sizeof(char);
 
 	while (counter < length_letters)
 	{
