@@ -13,7 +13,7 @@ int main(void)
 
 	while (counter < length_letters)
 	{
-		putchar(letters[i]);
+		putchar(letters[counter]);
 		counter = counter + 1;
 	}
 	putchar('\n');
