@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
- * Description: print sizes of types
+ * Description: check if n is 0 or positive or negative
  * Return: Always 0 (Success)
  */
 int main(void)
