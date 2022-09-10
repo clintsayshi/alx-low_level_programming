@@ -11,7 +11,7 @@ int main(void)
 	int counter = 0;
 	int length_letters = sizeof(letters) / sizeof(char);
 
-	while (counter < length_letters)
+	while (counter < length_letters - 1)
 	{
 		putchar(letters[counter]);
 		counter = counter + 1;

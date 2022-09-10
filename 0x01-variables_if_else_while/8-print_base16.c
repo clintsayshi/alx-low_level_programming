@@ -9,10 +9,12 @@ int main(void)
 {
 	char numbers[] = "0123456789abcdef";
 	int length = sizeof(numbers) / sizeof(char);
+	int counter = 0;
 
-	for (int counter = 0; counter < length; counter++)
+	for (counter < length)
 	{
 		putchar(numbers[counter]);
+		counter++;
 	}
 	putchar('\n');
 	return (0);
