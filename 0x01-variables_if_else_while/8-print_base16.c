@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
@@ -7,13 +8,20 @@
  */
 int main(void)
 {
-	char numbers[] = "0123456789abcdef";
+	char numbers[] = "0123456789ABCDEF";
 	int length = sizeof(numbers) / sizeof(char);
 	int counter = 0;
 
-	for (counter < length)
+	while (counter < length)
 	{
-		putchar(numbers[counter]);
+		if (isalpha(numbers[counter]))
+		{
+			putchar(lower(numbers[counter]));
+		}
+		else
+		{
+			putchar(numbers[counter]);
+		}
 		counter++;
 	}
 	putchar('\n');
