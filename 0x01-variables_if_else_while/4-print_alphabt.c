@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (letters[counter] == 'q' || letters[counter] == 'e')
 		{
-			//
+			/* nothing */
 		}
 		else
 		{
