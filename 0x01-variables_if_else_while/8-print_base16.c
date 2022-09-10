@@ -12,7 +12,7 @@ int main(void)
 	int length = sizeof(numbers) / sizeof(char);
 	int counter = 0;
 
-	while (counter < length)
+	while (counter < length - 1)
 	{
 		if (isalpha(numbers[counter]))
 		{
@@ -22,7 +22,7 @@ int main(void)
 		{
 			putchar(numbers[counter]);
 		}
-		counter++;
+		counter = counter + 1;
 	}
 	putchar('\n');
 	return (0);
