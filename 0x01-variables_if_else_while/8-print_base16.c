@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (isalpha(numbers[counter]))
 		{
-			putchar(lower(numbers[counter]));
+			putchar(tolower(numbers[counter]));
 		}
 		else
 		{
