@@ -8,9 +8,9 @@
 int main(void)
 {
 	char letters[] = "abcdefghijklmnopqrstuvwxyz";
-	int counter = sizeof(letters) / sizeof(char) - 1;
+	int counter = sizeof(letters) / sizeof(char) - 2;
 
-	while (counter >= 0)
+	while (counter > -1)
 	{
 		putchar(letters[counter]);
 		counter = counter - 1;
