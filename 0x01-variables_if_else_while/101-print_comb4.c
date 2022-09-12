@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (b = a + 1; b < 9; b++)
 		{
-			for (c = b; c <= 9; c++)
+			for (c = b + 1; c <= 9; c++)
 			{
 				putchar(a + '0');
 				putchar(b + '0');
@@ -23,8 +23,8 @@ int main(void)
 
 				if (a + b + c != 7 + 8 + 9)
 				{
-					putchar(' ');
 					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
