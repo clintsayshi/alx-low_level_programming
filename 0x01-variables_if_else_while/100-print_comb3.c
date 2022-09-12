@@ -19,8 +19,8 @@ int main(void)
 
 			if (a + b != 8 + 9)
 			{
-				putchar(' ');
 				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
