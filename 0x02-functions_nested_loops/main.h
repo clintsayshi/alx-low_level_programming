@@ -1,1 +1,7 @@
-void _putchar(char* str);
+/**
+ *
+ * Main header file for function prototypes
+ *
+ */
+
+int _putchar(int character);
