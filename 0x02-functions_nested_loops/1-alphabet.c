@@ -9,12 +9,11 @@
  */
 void print_alphabet(void)
 {
-	char alphabet[] = "abcdefghijKlmnopqrstuvwxyz";
 	int a;
 
-	for (a = 0; a < strlen(alphabet); a++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		_putchar(tolower(alphabet[a]));
+		_putchar(tolower(a));
 	}
 	_putchar('\n');
 }
