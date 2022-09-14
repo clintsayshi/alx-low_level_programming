@@ -9,5 +9,9 @@
  */
 int _islower(c)
 {
-	return islower(c);
+	int value = (int) c;
+	if (value < 97)
+		return 0;
+	else
+		return 1;
 }
