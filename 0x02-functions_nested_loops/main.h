@@ -29,3 +29,12 @@ void jack_bauer(void);
 
 /* function that prints the last digit of a number */
 int print_last_digit(int);
+
+/* function that prints the 9 times table, starting with 0 */
+void times_table(void);
+
+/* function that adds two integers and returns the result */
+int add(int, int);
+
+/* function that prints all natural numbers from n to 98, followed by a new line */
+void print_to_98(int n);
