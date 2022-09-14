@@ -7,7 +7,7 @@
  * Description: checks for lowercase character
  * Return: Void
  */
-int _islower(c)
+int _islower(int c)
 {
 	int value = (int) c;
 	if (value < 97)
