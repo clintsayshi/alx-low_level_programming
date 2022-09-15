@@ -16,7 +16,10 @@ void times_table(void)
 			printf("%d", counter);
 			if (b != 9)
 			{
-				printf(",  ");
+				if (b < 10)
+					printf(",  ");
+				else
+					printf(", ");
 			}
 			counter = counter + a;
 		}
