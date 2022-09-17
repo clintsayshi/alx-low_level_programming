@@ -6,11 +6,6 @@
  * Return: Void
  */
 
-void print_char(int c)
-{
-	_putchar(c + '0');
-}
-
 void more_numbers(void)
 {
 	int num;
