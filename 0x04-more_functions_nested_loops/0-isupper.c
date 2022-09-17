@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
  * _isupper - Entry point
  * @c: a character value
@@ -8,7 +9,7 @@
 
 int _isupper(int c)
 {
-	if ((int)c < 91)
+	if (isupper(c))
 	{
 		return (1);
 	}
