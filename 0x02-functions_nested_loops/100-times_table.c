@@ -16,10 +16,28 @@ void print_times_table(int n)
 			counter = 0;
 			for (b = 0; b <= n; b++)
 			{
-				printf("%d", counter);
-				if (counter != n)
+				if (b == 0)
 				{
-					printf(", ");
+					printf("%d", counter);
+				} else
+				{
+					if (counter < 10)
+					{
+						putchar(',');
+						putchar(' ');
+						putchar(' ');
+						putchar(' ');
+					} else if (counter < 100)
+					{
+						putchar(',');
+						putchar(' ');
+						putchar(' ');
+					} else
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					printf("%d", counter);
 				}
 				counter = counter + a;
 			}
