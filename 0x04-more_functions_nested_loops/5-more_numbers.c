@@ -6,6 +6,11 @@
  * Return: Void
  */
 
+void print_char(int c)
+{
+	_putchar(c + '0');
+}
+
 void more_numbers(void)
 {
 	int num;
@@ -15,8 +20,14 @@ void more_numbers(void)
 	{
 		for (num = 0; num <= 14; num++)
 		{
-			_putchar(num / 10 + '0');
-			_putchar(num % 10 + '0');
+			if (num < 10)
+			{
+				print_char(num);
+			} else
+			{
+				print_char(num / 10);
+				print_char(num % 10);
+			}
 		}
 		_putchar('\n');
 	}
