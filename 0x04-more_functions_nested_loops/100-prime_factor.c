@@ -8,25 +8,18 @@
 
 void main(void)
 {
-	int i, j;
-	int num = 612852475143;
-	int largest;
+	unsigned long num = 612852475143;
+	unsigned long i = 2;
 
-	for (i = 1; i < num; i++)
+	for (i < num)
 	{
 		if (num % i == 0)
 		{
-			int count = 0;
-
-			for (j = 2; j < i; j++)
-			{
-				if (i % j == 0)
-					count = count + 1;
-			}
-			if (count == 0)
-				largest = i;
-		}
+			num = num / i;
+			i = 2;
+		} else
+			i++;
 	}
 
-	printf("%d\n", largest);
+	printf("%lu\n", num);
 }
