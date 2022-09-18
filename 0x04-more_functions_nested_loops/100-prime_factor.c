@@ -11,7 +11,7 @@ void main(void)
 	unsigned long num = 612852475143;
 	unsigned long i = 2;
 
-	for (i < num)
+	while (i < num)
 	{
 		if (num % i == 0)
 		{
