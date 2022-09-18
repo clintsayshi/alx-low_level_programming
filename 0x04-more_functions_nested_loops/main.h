@@ -29,3 +29,6 @@ int _putchar(int character);
 
 /* function that prints a square, followed by a new line */
 void print_square(int size);
+
+/* function that prints a triangle, followed by a new line */
+void print_triangle(int size);
