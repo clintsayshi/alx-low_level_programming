@@ -17,6 +17,7 @@ int main(void)
 		if (num % i == 0)
 		{
 			int count = 0;
+
 			for (j = 2; j < i; j++)
 			{
 				if (i % j == 0)
