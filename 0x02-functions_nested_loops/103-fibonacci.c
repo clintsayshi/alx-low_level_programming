@@ -13,7 +13,6 @@ int main(void)
 	unsigned long current;
 	unsigned long sum;
 
-	counter = 0;
 	prev = 1;
 	i = 2;
 
