@@ -3,10 +3,10 @@
 /**
  * main - Prime factors
  *
- * Return: Void
+ * Return: Always 0
  */
 
-void main(void)
+int main(void)
 {
 	unsigned long num = 612852475143;
 	unsigned long i = 2;
@@ -22,4 +22,6 @@ void main(void)
 	}
 
 	printf("%lu\n", num);
+
+	return (0);
 }
