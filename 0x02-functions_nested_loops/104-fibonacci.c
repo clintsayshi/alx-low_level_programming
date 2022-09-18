@@ -9,21 +9,21 @@
 
 int main(void)
 {
-	unsigned long i;
-	unsigned long prev;
-	unsigned long current;
+	float i;
+	float prev;
+	float current;
 	int counter;
 
 	counter = 0;
 	prev = 1;
 	i = 2;
 
-	printf("%lu, %lu, ", prev, i);
+	printf("%0.f, %0.f, ", prev, i);
 
 	while (counter < 96)
 	{
 		current = prev + i;
-		printf("%lu", current);
+		printf("%.0f", current);
 
 		if (counter < 95)
 			printf(", ");
