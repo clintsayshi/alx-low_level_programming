@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - FizzBuzz
+ * main - Prime factors
  *
  * Return: Void
  */
 
-int main(void)
+void main(void)
 {
-	int i;
+	int i, j;
 	int num = 612852475143;
 	int largest;
 
@@ -29,6 +29,4 @@ int main(void)
 	}
 
 	printf("%d\n", largest);
-
-	return (0);
 }
