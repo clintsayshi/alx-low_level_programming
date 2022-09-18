@@ -17,20 +17,21 @@ int main(void)
 	counter = 2;
 	prev = 1;
 	i = 2;
-
+	current = prev + i;
 	printf("%0.f, %0.f, ", prev, i);
 
 	while (counter < 98)
 	{
-		current = prev + i;
+		/*current = prev + i;*/
 		printf("%.0f", current);
-
+		current = prev + i;
+		counter++;
 		if (counter < 97)
 			printf(", ");
 
 		prev = i;
 		i = current;
-		counter++;
+		/*counter++;*/
 	}
 	printf("\n");
 
