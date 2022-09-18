@@ -14,18 +14,18 @@ int main(void)
 	float current;
 	int counter;
 
-	counter = 0;
+	counter = 2;
 	prev = 1;
 	i = 2;
 
 	printf("%0.f, %0.f, ", prev, i);
 
-	while (counter < 96)
+	while (counter < 98)
 	{
 		current = prev + i;
 		printf("%.0f", current);
 
-		if (counter < 95)
+		if (counter < 97)
 			printf(", ");
 
 		prev = i;
