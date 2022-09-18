@@ -13,8 +13,9 @@ int main(void)
 	unsigned long current;
 	unsigned long sum;
 
-	prev = 1;
-	i = 2;
+	prev = 1; /* F(n - 2) */
+	i = 2; /* F(n - 1) */
+	sum = i;
 
 	while (i + prev < 4000000)
 	{
