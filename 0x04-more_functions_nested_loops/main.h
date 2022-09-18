@@ -26,3 +26,6 @@ void print_diagonal(int n);
 
 /* function to print a char */
 int _putchar(int character);
+
+/* function that prints a square, followed by a new line */
+void print_square(int size);
