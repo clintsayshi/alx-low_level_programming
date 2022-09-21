@@ -1,6 +1,5 @@
 #include "main.h"
-#include <string.h>
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_array - print an array of ints
