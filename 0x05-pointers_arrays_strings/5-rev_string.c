@@ -13,13 +13,13 @@ void rev_string(char *s)
 {
 	unsigned int i;
 	unsigned int length = strlen(s);
-	int *ptr = (int*)malloc(length * sizeof(char));
+	int *ptr = (int *)malloc(length * sizeof(char));
 
 	for (i = length; i > 0; i--)
 	{
 		ptr[length - i] = *(s + (i - 1));
 	}
-	
+
 	for (i = 0; i < length; i++)
 	{
 		*(s + i) = ptr[i];
