@@ -12,12 +12,17 @@ int _strcmp(char *s1, char *s2)
 {
 	int size1 = strlen(s1);
 	int size2 = strlen(s2);
+	int i;
 
-	if (size1 < size2)
-		return (-15);
-	else if (size1 == size2)
-		return (0);
-	else
-		return (15);
-
+	for (i = 0; i <  size1; i++)
+	{
+		if (s1[i] != s2[i])
+		{
+			if ((int)s1[i] > (int)s2[i])
+				return (15);
+			else
+				return (-15);
+		}
+	}
+	return (0);
 }
