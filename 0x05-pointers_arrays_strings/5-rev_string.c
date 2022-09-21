@@ -12,15 +12,15 @@ void print_rev(char *s)
 {
 	unsigned int i;
 	unsigned int length = strlen(s);
-	char copy[length];
+	char j[length];
 
 	for (i = length; i > 0; i--)
 	{
-		copy[length - i] = *(s + (i - 1));
+		j[length - i] = *(s + (i - 1));
 	}
 	
 	for (i = 0; i < length; i++)
 	{
-		*(s + i) = copy(i);
+		*(s + i) = j[i];
 	}
 }
