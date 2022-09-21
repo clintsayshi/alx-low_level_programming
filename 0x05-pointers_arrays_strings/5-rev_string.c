@@ -9,7 +9,7 @@
  * Return: void
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	unsigned int i;
 	unsigned int length = strlen(s);
