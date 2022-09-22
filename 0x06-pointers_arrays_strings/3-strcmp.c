@@ -12,7 +12,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	int size1 = strlen(s1);
-	int size2 = strlen(s2);
+	/*int size2 = strlen(s2);*/
 	int i;
 
 	for (i = 0; i <  size1; i++)
