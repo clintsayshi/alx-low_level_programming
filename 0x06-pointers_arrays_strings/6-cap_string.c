@@ -11,7 +11,8 @@
 char *cap_string(char *s)
 {
 	int i, j;
-	char separators[] = {' ','\t', '\n', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char tors[] = {' ', '\t', '\n', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+
 	i = 0;
 	while (s[i] != '\0')
 	{
@@ -20,9 +21,9 @@ char *cap_string(char *s)
 			s[i] = toupper(s[i]);
 		} else
 		{
-			for (j = 0; j < (int)strlen(separators); j++)
+			for (j = 0; j < (int)strlen(tors); j++)
 			{
-				if (s[i - 1] == separators[j])
+				if (s[i - 1] == tors[j])
 				{
 					s[i] = toupper(s[i]);
 				}
