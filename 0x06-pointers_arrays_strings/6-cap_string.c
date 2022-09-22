@@ -10,8 +10,8 @@
 
 char *cap_string(char *s)
 {
-	int i;
-
+	int i, j;
+	char separators[] = {' ','\t', '\n', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 	i = 0;
 	while (s[i] != '\0')
 	{
@@ -20,9 +20,12 @@ char *cap_string(char *s)
 			s[i] = toupper(s[i]);
 		} else
 		{
-			if (!isalpha(s[i - 1]) && !isdigit(s[i - 1]) && s[i] != '-')
+			for (j = 0; j < (int)strlen(separators); j++)
 			{
-				s[i] = toupper(s[i]);
+				if (s[i - 1] == separators[j])
+				{
+					s[i] = toupper(s[i]);
+				}
 			}
 		}
 		i++;
