@@ -15,10 +15,10 @@ char *leet(char *s)
 	char digits[] = "43071";
 	int i, j;
 
-	for (i = 0; i < strlen(s); i++)
+	for (i = 0; i < (int)strlen(s); i++)
 	{
 
-		for (j = 0; j < strlen(chars); j++)
+		for (j = 0; j < (int)strlen(chars); j++)
 		{
 			if (s[i] == toupper(chars[j]) || s[i] == chars[j])
 			{
