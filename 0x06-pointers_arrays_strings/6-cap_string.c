@@ -20,7 +20,7 @@ char *cap_string(char *s)
 			s[i] = toupper(s[i]);
 		} else
 		{
-			if (!isalpha(s[i - 1]))
+			if (!isalpha(s[i - 1]) && !isdigit(s[i - 1]))
 			{
 				s[i] = toupper(s[i]);
 			}
