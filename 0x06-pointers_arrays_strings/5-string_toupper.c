@@ -2,21 +2,26 @@
 #include <string.h>
 #include <ctype.h>
 /**
- **string_cap - change to uppercase
+ **string_toupper - change to uppercase
  * @s: a string
  * Description: changes all lowercase letters of a string to uppercase
  * Return: string in uppercase
  */
 
-char *string_cap(char *s)
+char *string_toupper(char *s)
 {
-	unsigned int i;
+	int i;
 
-	for (i = 0; i < strlen(s); i++)
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		*(s + i) = toupper(*(s + i));
-	}
+		if (isalpha(s[i]))		
+			s[i] = toupper(s[i]);
 
+		i++;
+
+	}
 
 	return (s);
 }
