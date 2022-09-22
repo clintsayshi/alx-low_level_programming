@@ -20,10 +20,7 @@ char *cap_string(char *s)
 			s[i] = toupper(s[i]);
 		} else
 		{
-			if ((i > 1 && s[i - 2] == '\\') && (s[i - 1] == 'n' || s[i - 1] == 't'))
-				s[i] = toupper(s[i]);
-				
-			else if (!isalpha(s[i - 1]) && !isdigit(s[i - 1]))
+			if (!isalpha(s[i - 1]) && !isdigit(s[i - 1]) && s[i] != '-')
 			{
 				s[i] = toupper(s[i]);
 			}
