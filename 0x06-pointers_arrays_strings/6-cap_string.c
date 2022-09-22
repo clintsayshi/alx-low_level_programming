@@ -25,6 +25,7 @@ char *cap_string(char *s)
 				s[i] = toupper(s[i]);
 			}
 		}
+		i++;
 	}
 
 	return (s);
