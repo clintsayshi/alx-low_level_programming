@@ -16,7 +16,7 @@ char *string_toupper(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (isalpha(s[i]))		
+		if (isalpha(s[i]))	
 			s[i] = toupper(s[i]);
 
 		i++;
