@@ -1,5 +1,5 @@
 /**
- * int is_prime_number - checks if a number is prime
+ * is_prime_number - checks if a number is prime
  * @n: number to be checked
  *
  * Return: 1 or 0
