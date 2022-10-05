@@ -19,8 +19,11 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[i])
 			{
 				length = length + 1;
+				break;
 			}
 		}
+		if (s[j] == '\0')
+			return (length);
 	}
 
 	return (length);
