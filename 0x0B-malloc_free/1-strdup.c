@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * _strdup - returns pointer to newly allocated space in memory
  * @str: initial value to set to pointer
